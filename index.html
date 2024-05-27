@@ -366,29 +366,47 @@
         <h3 class="font-bold text-lg text-center">Registro de Usuario</h3>
         <form class="space-y-4 mt-4">
             <!-- Campo Nombre -->
-            <label class="input input-bordered flex items-center gap-2 w-full">
-                <input type="text" class="grow" placeholder="Nombre" required />
-            </label>
+            <div class="form-control">
+                <label for="name" class="label">
+                    <span class="label-text">Nombre</span>
+                </label>
+                <input type="text" id="name" class="input input-bordered w-full" placeholder="Nombre" required />
+            </div>
             <!-- Campo Nombre de Usuario -->
-            <label class="input input-bordered flex items-center gap-2 w-full">
-                <input type="text" class="grow" placeholder="Nombre de Usuario" required />
-            </label>
+            <div class="form-control">
+                <label for="username" class="label">
+                    <span class="label-text">Nombre de Usuario</span>
+                </label>
+                <input type="text" id="username" class="input input-bordered w-full" placeholder="Nombre de Usuario" required />
+            </div>
             <!-- Campo Correo -->
-            <label class="input input-bordered flex items-center gap-2 w-full">
-                <input type="email" class="grow" placeholder="Correo Electrónico" required />
-            </label>
+            <div class="form-control">
+                <label for="email" class="label">
+                    <span class="label-text">Correo Electrónico</span>
+                </label>
+                <input type="email" id="email" class="input input-bordered w-full" placeholder="Correo Electrónico" required />
+            </div>
             <!-- Campo Fecha de Nacimiento -->
-            <label class="input input-bordered flex items-center gap-2 w-full">
-                <input type="date" class="grow" placeholder="Fecha de Nacimiento" required />
-            </label>
+            <div class="form-control">
+                <label for="dob" class="label">
+                    <span class="label-text">Fecha de Nacimiento</span>
+                </label>
+                <input type="date" id="dob" class="input input-bordered w-full" required />
+            </div>
             <!-- Campo Contraseña -->
-            <label class="input input-bordered flex items-center gap-2 w-full">
-                <input type="password" class="grow" placeholder="Contraseña" required />
-            </label>
+            <div class="form-control">
+                <label for="password" class="label">
+                    <span class="label-text">Contraseña</span>
+                </label>
+                <input type="password" id="password" class="input input-bordered w-full" placeholder="Contraseña" required />
+            </div>
             <!-- Campo Repetir Contraseña -->
-            <label class="input input-bordered flex items-center gap-2 w-full">
-                <input type="password" class="grow" placeholder="Repetir Contraseña" required />
-            </label>
+            <div class="form-control">
+                <label for="confirm_password" class="label">
+                    <span class="label-text">Repetir Contraseña</span>
+                </label>
+                <input type="password" id="confirm_password" class="input input-bordered w-full" placeholder="Repetir Contraseña" required />
+            </div>
             <!-- Botón para invitar al siguiente paso -->
             <div class="modal-action flex justify-center">
                 <button type="submit" class="btn w-full max-w-xs">Siguiente Paso</button>
