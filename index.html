@@ -50,7 +50,7 @@
 
       <!-- Botón Ingresar -->
       <div class="navbar-end">
-        <a class="btn btn-primary">Ingresar</a>
+        <a class="btn btn-primary" onclick="openLoginModal()">Ingresar</a>
       </div>
     </div>
 
@@ -58,27 +58,27 @@
 
     <main>
 
-      <!-- Hero -->
-      <section class="hero">
-        <div class="container mx-auto px-5 py-15">
-          <div class="flex flex-col lg:flex-row items-center">
-            <div class="text-center lg:text-left lg:w-1/2 pt-4 lg:pt-0">
-              <h2 class=" text-3xl md:text-4xl lg:text-5xl font-bold mb-12 pt-10 lg:pt-0 text-slate-300">
-                Únete al Club de lectura Bibliosfera y disfruta de libros
-                increíbles cada mes
-              </h2>
-              <p class="text-md md:text-xl lg:text-2xl mb-4">
-                Conéctate con otros amantes de los libros y enriquece tu experiencia
-                de lectura.
-              </p>
-              <a href="#subscribe" class="btn btn-md lg:btn-lg text-xl btn-primary">Suscríbete Ahora</a>
-            </div>
-            <div class="lg:w-1/2 mt-6 lg:mt-0">
-              <img src="./assets/img/front-view-composition-with-different-books.png" alt="Libros" class="w-full max-w-xs sm:w-full lg:max-w-xl mx-auto ps-8">
-            </div>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container mx-auto px-5 py-15">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="text-center lg:text-left lg:w-1/2 pt-4 lg:pt-0">
+            <h2 class=" text-3xl md:text-4xl lg:text-5xl font-bold mb-12 pt-10 lg:pt-0">
+              Únete al Club de lectura Bibliosfera y disfruta de libros
+              increíbles cada mes
+            </h2>
+            <p class="text-md md:text-xl lg:text-2xl mb-4">
+              Conéctate con otros amantes de los libros y enriquece tu experiencia
+              de lectura.
+            </p>
+            <a onclick="openRegisterModal()" class="btn btn-md lg:btn-lg text-xl btn-primary">Suscríbete Ahora</a>
+          </div>
+          <div class="lg:w-1/2 mt-6 lg:mt-0">
+            <img src="./assets/img/front-view-composition-with-different-books.png" alt="Libros" class="w-full max-w-xs sm:w-full lg:max-w-xl mx-auto ps-8">
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
@@ -193,201 +193,229 @@
       
       
 
-      <!-- Suscripción -->
-      <section id="planes" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-2xl lg:text-3xl font-bold text-center mb-8 text-base-100">Planes de Suscripción</h2>
-                <p class="text-gray-500">Elige el plan que mejor se adapte a ti</p>
-            </div>
-            <div class="flex flex-wrap justify-center">
-                <!-- Plan Básico -->
-                <div class="w-full md:w-1/3 px-4 mb-6 md:mb-0">
-                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col h-full">
-                        <h3 class="text-xl font-semibold text-gray-800">Básico</h3>
-                        <p class="text-gray-500 mt-4">$9.99/mes</p>
-                        <div class="mt-6 mb-6">
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Acceso a 1 e-libro mensual</p>
-                                </div>
-                              </div>  
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Participación en debates</p>
-                                </div>
-                              </div>  
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Contenido exclusivo</p>
-                                </div>
-                              </div>  
-                        </div>
-                        <a href="#" class="btn btn-primary w-full rounded-lg mt-auto text-xl">Suscribirse</a>
-                    </div>
-                </div>
-                <!-- Plan Estándar -->
-                <div class="w-full md:w-1/3 px-4 mb-6 md:mb-0">
-                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col h-full border-2 border-blue-500">
-                        <h3 class="text-xl font-semibold text-gray-800">Estándar</h3>
-                        <p class="text-gray-500 mt-4">$19.99/mes</p>
-                        <div class="mt-6 mb-6">
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Acceso a 1 libro fisico mensual</p>
-                                </div>
-                              </div>  
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Participación en debates</p>
-                                </div>
-                              </div>  
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Contenido exclusivo</p>
-                                </div>
-                              </div>  
-                              <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Acceso a webinars</p>
-                                </div>
+    <!-- Suscripción -->
+    <section id="planes" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+              <h2 class="text-2xl md:text-2xl lg:text-3xl font-bold text-center mb-8 text-black">Planes de Suscripción</h2>
+              <p class="text-gray-600">Elige el plan que mejor se adapte a ti</p>
+          </div>
+          <div class="flex flex-wrap justify-center">
+              <!-- Plan Básico -->
+              <div class="w-full md:w-1/3 px-4 mb-6 md:mb-0">
+                  <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col h-full">
+                      <h3 class="text-xl font-semibold text-gray-800">Básico</h3>
+                      <p class="text-gray-600 mt-4">Gratis</p>
+                      <div class="mt-6 mb-6">
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Acceso a nuestra plataforma</p>
                               </div>
-                        </div>
-                        <a href="#" class="btn btn-primary w-full rounded-lg mt-auto text-xl">Suscribirse</a>
-                    </div>
-                </div>
-                <!-- Plan Premium -->
-                <div class="w-full md:w-1/3 px-4">
-                    <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col h-full">
-                        <h3 class="text-xl font-semibold text-gray-800">Premium</h3>
-                        <p class="text-gray-500 mt-4">$29.99/mes</p>
-                        <div class="mt-6 mb-6">
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Acceso a 1 libro fisico mensual</p>
-                                </div>
-                              </div>  
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Participación en debates</p>
-                                </div>
-                              </div>  
-                            <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Contenido exclusivo</p>
-                                </div>
-                              </div>  
-                              <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Acceso a webinars</p>
-                                </div>
+                            </div>  
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Participación en debates</p>
                               </div>
-                              <div class="relative w-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
-                                  <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
-                                </svg>
-                                <div class="ml-7">
-                                  <p class="text-gray-500">Sesiones de mentoría</p>
-                                </div>
+                            </div>  
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Contenido exclusivo</p>
                               </div>
-                        </div>
-                        <a href="#" class="btn btn-primary w-full rounded-lg mt-auto text-xl">Suscribirse</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-
-
-
-      <!-- Sección destadados -->
-
-
-
-      <!-- Preguntas frecuentes -->
-      <section id="faq" class="py-20 px-5 md:px-10 lg:px-60  grid gap-4 bg-gray-100 text-base-100">
-        <div class="join join-vertical w-full shadow-2xl gap-2 pb-5">
-          <div class="flex pt-10 ps-10 gap-3 pb-5">
-            <img src="./assets/img/icon-star.svg" alt="">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-base-100">FAQs</h2>
+                            </div>  
+                      </div>
+                      <a href="#" class="btn btn-primary w-full rounded-lg mt-auto text-xl">Suscribirse</a>
+                  </div>
+              </div>
+              <!-- Plan Estándar -->
+              <div class="w-full md:w-1/3 px-4 mb-6 md:mb-0">
+                  <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col h-full border-2 border-blue-500">
+                      <h3 class="text-xl font-semibold text-gray-800">Estándar</h3>
+                      <p class="text-gray-600 mt-4">$19.99/mes</p>
+                      <div class="mt-6 mb-6">
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Acceso a 1 e-libro mensual</p>
+                              </div>
+                            </div>  
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Participación en debates</p>
+                              </div>
+                            </div>  
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Contenido exclusivo</p>
+                              </div>
+                            </div>  
+                            <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Acceso a webinars</p>
+                              </div>
+                            </div>
+                      </div>
+                      <a href="#" class="btn btn-primary w-full rounded-lg mt-auto text-xl">Suscribirse</a>
+                  </div>
+              </div>
+              <!-- Plan Premium -->
+              <div class="w-full md:w-1/3 px-4">
+                  <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col h-full">
+                      <h3 class="text-xl font-semibold text-gray-800">Premium</h3>
+                      <p class="text-gray-600 mt-4">$29.99/mes</p>
+                      <div class="mt-6 mb-6">
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Acceso a 1 libro fisico mensual</p>
+                              </div>
+                            </div>  
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Participación en debates</p>
+                              </div>
+                            </div>  
+                          <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Contenido exclusivo</p>
+                              </div>
+                            </div>  
+                            <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Acceso a webinars</p>
+                              </div>
+                            </div>
+                            <div class="relative w-full">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="absolute -top-0.5 z-10 -ml-0.5 h-7 w-7 rounded-full text-primary">
+                                <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                              </svg>
+                              <div class="ml-7">
+                                <p class="text-gray-600">Sesiones de mentoría</p>
+                              </div>
+                            </div>
+                      </div>
+                      <a href="#" class="btn btn-primary w-full rounded-lg mt-auto text-xl">Suscribirse</a>
+                  </div>
+              </div>
           </div>
-          <!-- Pregunta 1 -->
-          <div class="collapse collapse-plus join-item px-5">
-            <input type="radio" name="my-accordion-4" checked="checked" /> 
-            <div class="collapse-title text-lg md:text-xl font-bold">
-              ¿Qué tipo de libros ofrece Bibliosfera?
+      </div>
+    </section>
+<section>
+  <!-- login modal -->
+<dialog id="login_modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+      <h3 class="font-bold text-lg text-center">Ingresar</h3>
+      <p class="py-4 text-center">Ingrese sus credenciales para ingresar a Bibliosfera</p>
+      <div class="modal-action flex flex-col items-center">
+          <form method="dialog" class="w-full flex flex-col items-center gap-4">
+              <!-- Campo de nombre de usuario -->
+              <label class="input input-bordered flex items-center gap-2 w-full max-w-xs">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70">
+                      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+                  </svg>
+                  <input type="text" class="grow" placeholder="Nombre de usuario" />
+              </label>
+              <!-- Campo de contraseña -->
+              <label class="input input-bordered flex items-center gap-2 w-full max-w-xs">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70">
+                      <path fill-rule="evenodd" d="M14 6a4 4 0 0 1-4.899 3.899l-1.955 1.955a.5.5 0 0 1-.353.146H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2.293a.5.5 0 0 1 .146-.353l3.955-3.955A4 4 0 1 1 14 6Zm-4-2a.75.75 0 0 0 0 1.5.5.5 0 0 1 .5.5.75.75 0 0 0 1.5 0 2 2 0 0 0-2-2Z" clip-rule="evenodd" />
+                  </svg>
+                  <input type="password" class="grow" placeholder="Contraseña" />
+              </label>
+              <!-- Botón de enviar a futuro dentro de la plataforma-->
+              <button class="btn w-full max-w-xs">Ingresar</button>
+          </form>
+      </div>
+  </div>
+</dialog>
+</section>
+<section>
+  <!--register modal-->
+  <dialog id="register_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+        <h3 class="font-bold text-lg text-center">Registro de Usuario</h3>
+        <form class="space-y-4 mt-4">
+            <!-- Campo Nombre -->
+            <div class="form-control">
+                <label for="name" class="label">
+                    <span class="label-text">Nombre</span>
+                </label>
+                <input type="text" id="name" class="input input-bordered w-full" placeholder="Nombre" required />
             </div>
-            <div class="collapse-content text-sm md:text-base"> 
-              <p>En Bibliosfera, ofrecemos una amplia variedad de libros que abarcan diferentes géneros y temáticas. Desde novelas de ficción hasta ensayos, pasando por literatura clásica, contemporánea, y mucho más. Nuestra selección se actualiza constantemente para ofrecerte lo mejor del mundo editorial.</p>
+            <!-- Campo Nombre de Usuario -->
+            <div class="form-control">
+                <label for="username" class="label">
+                    <span class="label-text">Nombre de Usuario</span>
+                </label>
+                <input type="text" id="username" class="input input-bordered w-full" placeholder="Nombre de Usuario" required />
             </div>
-          </div>
-          <hr class="border-t border-gray-300">
-          <!-- Pregunta 2 -->
-          <div class="collapse collapse-plus join-item px-5">
-            <input type="radio" name="my-accordion-4" /> 
-            <div class="collapse-title text-lg md:text-xl font-bold">
-              ¿Cómo me uno al Club de Lectura Bibliosfera?
+            <!-- Campo Correo -->
+            <div class="form-control">
+                <label for="email" class="label">
+                    <span class="label-text">Correo Electrónico</span>
+                </label>
+                <input type="email" id="email" class="input input-bordered w-full" placeholder="Correo Electrónico" required />
             </div>
-            <div class="collapse-content text-sm md:text-base"> 
-              <p>Para unirte a Bibliosfera, simplemente haz clic en el botón "Suscríbete Ahora" en nuestra página principal y sigue los pasos de registro. ¡Es fácil y rápido!</p>
+            <!-- Campo Fecha de Nacimiento -->
+            <div class="form-control">
+                <label for="dob" class="label">
+                    <span class="label-text">Fecha de Nacimiento</span>
+                </label>
+                <input type="date" id="dob" class="input input-bordered w-full" required />
             </div>
-          </div>
-          <hr class="border-t border-gray-300">
-          <!-- Pregunta 3 -->
-          <div class="collapse collapse-plus join-item px-5">
-            <input type="radio" name="my-accordion-4" /> 
-            <div class="collapse-title text-lg md:text-xl font-bold">
-              ¿Cómo se seleccionan los libros que recibo?
+            <!-- Campo Contraseña -->
+            <div class="form-control">
+                <label for="password" class="label">
+                    <span class="label-text">Contraseña</span>
+                </label>
+                <input type="password" id="password" class="input input-bordered w-full" placeholder="Contraseña" required />
             </div>
-            <div class="collapse-content text-sm md:text-base"> 
-              En Bibliosfera, queremos que tengas el control sobre tu experiencia de lectura. Una vez te registres, tendrás la opción de explorar nuestra amplia colección de libros y seleccionar aquellos que más te interesen. Basándonos en tus elecciones, te enviaremos un libro que se ajuste a tus preferencias cada mes. ¡Así puedes disfrutar de una experiencia de lectura verdaderamente personalizada!            </div>
-          </div>
-          <hr class="border-t border-gray-300">
-          <!-- Pregunta 4 -->
-          <div class="collapse collapse-plus join-item px-5">
-            <input type="radio" name="my-accordion-4" /> 
-            <div class="collapse-title text-lg md:text-xl font-bold">
-              ¿Puedo cancelar mi suscripción en cualquier momento?
+            <!-- Campo Repetir Contraseña -->
+            <div class="form-control">
+                <label for="confirm_password" class="label">
+                    <span class="label-text">Repetir Contraseña</span>
+                </label>
+                <input type="password" id="confirm_password" class="input input-bordered w-full" placeholder="Repetir Contraseña" required />
             </div>
-            <div class="collapse-content text-sm md:text-base"> 
-              <p>Sí, puedes cancelar tu suscripción en cualquier momento sin compromiso. Simplemente ve a tu cuenta y selecciona la opción de cancelar suscripción.</p>
+            <!-- Botón para invitar al siguiente paso -->
+            <div class="modal-action flex justify-center">
+                <button type="submit" class="btn w-full max-w-xs">Siguiente Paso</button>
             </div>
-          </div>
+        </form>
+    </div>
+</dialog>
 
-      </section>
+</section>
 
     </main>
 
