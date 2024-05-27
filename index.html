@@ -71,7 +71,7 @@
               Conéctate con otros amantes de los libros y enriquece tu experiencia
               de lectura.
             </p>
-            <a href="#subscribe" class="btn btn-md lg:btn-lg text-xl btn-primary">Suscríbete Ahora</a>
+            <a onclick="openRegisterModal()" class="btn btn-md lg:btn-lg text-xl btn-primary">Suscríbete Ahora</a>
           </div>
           <div class="lg:w-1/2 mt-6 lg:mt-0">
             <img src="./assets/img/front-view-composition-with-different-books.png" alt="Libros" class="w-full max-w-xs sm:w-full lg:max-w-xl mx-auto ps-8">
@@ -332,8 +332,6 @@
     </section>
 <section>
   <!-- login modal -->
-<button class="btn" onclick="login_modal.showModal()">open modal</button>
-<button class="btn" onclick="register_modal.showModal()">open modal</button>
 <dialog id="login_modal" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
       <h3 class="font-bold text-lg text-center">Ingresar</h3>
