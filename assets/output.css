@@ -992,3 +992,20 @@ video {
     line-height: 1;
   }
 }
+
+.collapse-plus {
+  padding-right: 1rem;
+}
+
+.collapse-plus>.collapse-title:after {
+  content: url("../assets/img/icon-minus.svg") !important; /* Cambia el ícono por defecto a "-" */
+}
+
+/* Estilos adicionales para cambiar el ícono cuando está abierto */
+.collapse-open.collapse-plus>.collapse-title:after,
+.collapse-plus:focus:not(.collapse-close)>.collapse-title:after,
+.collapse-plus:not(.collapse-close)>input[type=checkbox]:checked~.collapse-title:after,
+.collapse-plus:not(.collapse-close)>input[type=radio]:checked~.collapse-title:after,
+.collapse[open].collapse-plus>.collapse-title:after {
+  content: url("../assets/img/icon-plus.svg") !important; /* Cambia el ícono cuando está abierto a "+" */
+}
