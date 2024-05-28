@@ -1008,4 +1008,9 @@ video {
 .collapse-plus:not(.collapse-close)>input[type=radio]:checked~.collapse-title:after,
 .collapse[open].collapse-plus>.collapse-title:after {
   content: url("../assets/img/icon-plus.svg") !important; /* Cambia el ícono cuando está abierto a "+" */
+  filter: brightness(0) saturate(100%) invert(73%) sepia(45%) saturate(3933%) hue-rotate(168deg) brightness(100%) contrast(95%);
+}
+
+.icon-social {
+  filter: brightness(0) saturate(100%) invert(73%) sepia(45%) saturate(3933%) hue-rotate(168deg) brightness(100%) contrast(95%);
 }
