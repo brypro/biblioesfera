@@ -1014,3 +1014,8 @@ video {
 .icon-social {
   filter: brightness(0) saturate(100%) invert(73%) sepia(45%) saturate(3933%) hue-rotate(168deg) brightness(100%) contrast(95%);
 }
+
+
+input::placeholder{
+  color: white !important;
+}

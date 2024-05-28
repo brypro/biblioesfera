@@ -10,3 +10,5 @@ function closeRegisterModal() {
 function openLoginModal() {
   login_modal.showModal();
 }
+
+

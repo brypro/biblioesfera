@@ -367,54 +367,54 @@
       <section>
         <dialog id="register_modal" class="modal modal-bottom sm:modal-middle">
           <div class="modal-box">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onclick="closeRegisterModal()">✕</button>
               <h3 class="font-bold text-lg text-center">Registro de Usuario</h3>
-              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onclick="closeRegisterModal()">✕</button>
               <form class="space-y-4 mt-4 modal-backdrop">
                   <!-- Campo Nombre -->
                   <div class="form-control">
                       <label for="name" class="label">
                           <span class="label-text">Nombre</span>
                       </label>
-                      <input type="text" id="name" class="input input-bordered w-full" placeholder="Nombre" required />
+                      <input type="text" id="name" class="input input-bordered w-full text-white" placeholder="Nombre" required />
                   </div>
                   <!-- Campo Nombre de Usuario -->
                   <div class="form-control">
                       <label for="username" class="label">
                           <span class="label-text">Nombre de Usuario</span>
                       </label>
-                      <input type="text" id="username" class="input input-bordered w-full" placeholder="Nombre de Usuario" required />
+                      <input type="text" id="username" class="input input-bordered w-full text-white" placeholder="Nombre de Usuario" required />
                   </div>
                   <!-- Campo Correo -->
                   <div class="form-control">
                       <label for="email" class="label">
                           <span class="label-text">Correo Electrónico</span>
                       </label>
-                      <input type="email" id="email" class="input input-bordered w-full" placeholder="Correo Electrónico" required />
+                      <input type="email" id="email" class="input input-bordered w-full  text-white" placeholder="Correo Electrónico" required />
                   </div>
                   <!-- Campo Fecha de Nacimiento -->
                   <div class="form-control">
                       <label for="dob" class="label">
                           <span class="label-text">Fecha de Nacimiento</span>
                       </label>
-                      <input type="date" id="dob" class="input input-bordered w-full" required />
+                      <input type="date" id="dob" class="input input-bordered w-full  text-white" required />
                   </div>
                   <!-- Campo Contraseña -->
                   <div class="form-control">
                       <label for="password" class="label">
                           <span class="label-text">Contraseña</span>
                       </label>
-                      <input type="password" id="password" class="input input-bordered w-full" placeholder="Contraseña" required />
+                      <input type="password" id="password" class="input input-bordered w-full  text-white" placeholder="Contraseña" required />
                   </div>
                   <!-- Campo Repetir Contraseña -->
                   <div class="form-control">
                       <label for="confirm_password" class="label">
                           <span class="label-text">Repetir Contraseña</span>
                       </label>
-                      <input type="password" id="confirm_password" class="input input-bordered w-full" placeholder="Repetir Contraseña" required />
+                      <input type="password" id="confirm_password" class="input input-bordered w-full text-white" placeholder="Repetir Contraseña" required />
                   </div>
                   <!-- Botón para invitar al siguiente paso -->
                   <div class="modal-action flex justify-center">
-                      <button type="submit" class="btn w-full max-w-xs">Siguiente Paso</button>
+                      <button type="submit" class="btn w-full max-w-xs" onclick="closeRegisterModal()">Siguiente Paso</button>
                   </div>
               </form>
           </div>
@@ -427,7 +427,7 @@
         <div class="join join-vertical w-full shadow-2xl gap-2 pb-5">
           <div class="flex pt-10 ps-10 gap-3 pb-5">
             <img src="./assets/img/icon-star.svg" alt="">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-base-100">FAQs</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center">FAQs</h2>
           </div>
           <!-- Pregunta 1 -->
           <div class="collapse collapse-plus join-item px-5">
